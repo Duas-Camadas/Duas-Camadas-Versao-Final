@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My map</title>
+    <!-- Replace version in the URL with desired library version -->
+    <link rel='stylesheet' type='text/css'
+        href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.21.3/maps/maps.css' />
+    <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.21.3/maps/maps-web.min.js'></script>
+    <style>
+        #map {
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='map'></div>
+    <script>
+        // coordenadas da loja ou manicure
+        var loja = [-46.69489340297159, -23.527699688185837];
+        var loja2 = [-46.69864849534714, -23.525988053393064];
+
+        var map = tt.map({
+            container: 'map',
+            key: 'nme7N6US2Fm3ztEZQ9UEX6GXzSaDissd',
+            center: loja,
+            zoom: 16,
+        });
+
+        //bandeira que marca
+        var marker = new tt.Marker().setLngLat(loja).addTo(map);
+
+        // pop-up com infos
+        var popupOffsets = {
+            top: [0, 0],
+            bottom: [0, -70],
+            'bottom-right': [0, -70],
+            'bottom-left': [0, -70],
+            left: [25, -35],
+            right: [-25, -35]
+        }
+        // infos do pop-up
+        var popup = new tt.Popup({ offset: popupOffsets }).setHTML("Manicure: Ana Paula <br> <br> Endereço:  Rua César Augusto, 0 <br> <br> Telefone: (011) 2525-252x ");
+        marker.setPopup(popup).togglePopup();
+
+
+        // segunda localização
+
+
+        // bandeira que marca
+        var marker = new tt.Marker().setLngLat(loja2).addTo(map);
+
+        // pop-up com infos
+        var popupOffsets = {
+            top: [0, 0],
+            bottom: [0, -70],
+            'bottom-right': [0, -70],
+            'bottom-left': [0, -70],
+            left: [25, -35],
+            right: [-25, -35]
+        }
+        // infos do pop-up
+        var popup = new tt.Popup({ offset: popupOffsets }).setHTML("Cliente: Karen Lucia <br> <br> Endereço: Rua Coriolano, 0 <br> <br> Telefone:(011) 2525-202x ");
+        marker.setPopup(popup).togglePopup();
+
+
+    </script>
+</body>
+
+</html>
