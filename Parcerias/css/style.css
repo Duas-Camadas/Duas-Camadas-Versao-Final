@@ -1,0 +1,124 @@
+
+
+.container .plano-de-fundo {
+    position: relative;
+    right: 120px;
+    background-image: url(../img/Frame\ 3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1350px;
+    height: 480px;
+}
+
+header h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+}
+
+.fotos img {
+    position: relative;
+    top: 220px;
+    margin-left: 30px;
+}
+
+.parcerias img {
+    position: relative;
+    top: 300px;
+    margin-left: 30px;
+    border: 2px solid #fe8fd2;
+    border-radius: 10px;
+}
+
+.pa h3 {
+    position: relative;
+    top: 280px;
+    left: 70px;
+}
+
+
+.pergunta h2 {
+    position: relative;
+    top: 190px;
+    left: 19px;
+    text-align: center;
+    margin: 1px;
+    padding: 40px;
+    cursor: pointer;
+}
+
+
+
+.resposta{
+    width: 1000px;
+    height: 200px;
+    position: relative;
+    top: 300px;
+    text-align: justify;
+    left: 200px;
+    max-height: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4 ease-in-out;
+    transform:  scaleY(0,2);
+    transform-origin: top;
+}
+
+.ativar{
+    max-height: 300px;
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.fechar i{
+    transform: rotate(180deg);
+}
+
+.link h4 {
+    position: relative;
+    top: 240px;
+    left: 120px;
+    
+}
+
+/* footer */
+
+.footer{
+    margin-top: 17%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #000;;
+   
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+
+.footer .links{
+ 
+
+    padding:2rem 0;
+    gap:1rem;
+}
+
+.footer .links a{
+    padding:.7rem 2rem;
+    color:#000;
+   
+    font-size: 15px;
+}

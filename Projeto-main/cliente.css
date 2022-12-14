@@ -1,0 +1,346 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+/* .container {
+    padding: 80px 0;
+} */
+
+/* Barra de navegação*/
+.header,
+.navbar {
+    background-color: #fff;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+
+
+
+#logo {
+    width: 250px;
+    padding-left: 0px;
+}
+
+
+/*Barra de pesquisa*/
+.search-box {
+    position: relative;
+    left: 30px;
+    background-color: #fff;
+    height: 50px;
+    width: 370px;
+    padding: 1px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #fe8fd2;
+}
+
+.search-text {
+    background-color: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 3px;
+    transition: 0.4s;
+}
+
+.search-btn {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:hover>.search-text {
+    width: 350px;
+    padding-left: 10px;
+    transition: 0.6s;
+
+}
+
+.search-box:hover>.search-btn {
+    background-color: #FF0099;
+}
+
+.search-box:hover>.search-btn .loupe-pink {
+    display: none;
+}
+
+.search-box:hover>.search-btn .loupe-white {
+    display: block;
+}
+
+/*Display: block = vai fazer aparecer a lupa branca*/
+
+.loupe-white {
+    display: none;
+}
+
+
+.botao-menu {
+    border: 0;
+    background-color: #fff;
+
+}
+
+.botao-menu img {
+    position: relative;
+    left: 100px;
+}
+
+
+/*Imagem fundo*/
+.container-fluid {
+    padding: 0;
+}
+
+#foto .altura {
+    width: 100vw;
+    max-height: 70vh;
+    border-bottom: 15px solid #FF0099;
+    object-fit: cover;
+    object-position: 80% 70%;
+}
+
+/*bozoboso*/
+
+.conteiner-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    max-width: 1080px;
+    margin: 0 auto;
+    grid-gap: 40px;
+}
+
+.box {
+
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600px;
+    padding-bottom: 25px;
+}
+
+
+
+.estrelas img {
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.img-box img {
+    width: 215px;
+    margin-bottom: 16px;
+    border-radius: 8%;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.170);
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+
+
+.img-box:hover img {
+    transform: scale(1.2);
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*Comentariasopdásdla*/
+.foto-user img {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+
+
+
+}
+
+.foto-user {
+    display: flex;
+    align-items: center;
+}
+
+hr.style-one {
+    border: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+
+}
+
+.tudo {
+    padding-left: 202px;
+    padding-right: 202px;
+}
+
+.mns {
+    width: 50px;
+    padding: 5px;
+    background-color: #fe8fd2;
+    border-radius: 40px;
+}
+
+/*******************************/
+.perfil {
+    position: relative;
+    height: 50vh;
+    min-height: 250px;
+    max-height: 350px;
+    z-index: 1;
+}
+
+.perfil-avatar {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+    bottom: 16px;
+    left: 24px;
+}
+
+
+.perfil-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #FF0099;
+}
+
+.nome-perfil {
+    margin-left: 20px;
+    margin-top: 200px;
+    font-size: 40px;
+    color: #000;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.perfil-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    object-position: center;
+    border-radius: 4px;
+}
+
+.perfil-img:hover {
+    cursor: pointer;
+}
+
+.user-con {
+    left: 20px;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+#texto {
+    margin: 0px;
+
+    margin-block-start: 0, 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'poppins' sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+h3 {
+    margin: 0;
+    padding: 25px;
+    padding-left: 100px;
+    font-size: 30px;
+    margin-block-start: 1em;
+    /* margin-block-end: 1em; */
+    margin-inline-start: 0px;
+    /* margin-inline-end: 0px; */
+    font-weight: bold
+}
+
+.saloes {
+    padding-bottom: 35px;
+}
+
+.botao-menu:hover {
+    cursor: pointer;
+
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #000;
+    ;
+
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+
+.footer .links {
+
+
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a {
+    padding: .7rem 2rem;
+    color: #000;
+
+    font-size: 15px;
+}
