@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*gerais*/
+body {
+    font-family: 'Poppins', sans-serif ;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 80px 0;
+}
+
+/* Barra de navegação*/
+.header, .navbar {
+    background-color: #fff;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    
+      
+}
+
+#logo {
+    width: 250px;
+    padding-left: 0px;
+}
+
+
+/*Barra de pesquisa*/
+.search-box {
+    position: relative;
+    right: 30px;
+     background-color: #fff;
+     height: 50px;
+     width: 340px;
+     padding: 10px;
+     border-radius: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border: 1px solid #fe8fd2;
+ }
+
+ .search-text {
+    background-color: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 0;
+    transition: 0.4s;
+}
+
+.search-btn {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:hover > .search-text{
+    width: 350px;
+    padding-left: 10px;
+    transition: 0.6s;
+
+}
+
+.search-box:hover > .search-btn {
+    background-color: #FF0099;
+}
+
+.search-box:hover > .search-btn .loupe-pink {
+    display: none;
+}
+
+.search-box:hover > .search-btn .loupe-white {
+    display: block;
+}
+/*Display: block = vai fazer aparecer a lupa branca*/
+
+.loupe-white {
+    display: none;
+}
+
+
+.botao-menu {
+    border: 0;
+    background-color: #fff;
+    
+}
+
+
+/*Imagem fundo*/
+.container-fluid {
+    padding: 0;
+}
+
+#foto .altura {
+    width: 110vw;
+    max-height: 50vh;
+    border-bottom: 10px solid #FF0099;
+    object-fit: cover;
+    object-position: -1% 40%;  
+}
+
+/*Perfil da manicure*/
+.perfil{
+    position: relative;
+    height: 50vh;
+    min-height: 250px;
+    max-height: 350px;
+    z-index: 1;
+}
+
+.perfil-avatar{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+    bottom: 250px;
+    left: 50px;
+    
+}
+
+
+.perfil-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #FF0099;
+}
+
+.nome-perfil{
+    margin-left: 24px;
+    margin-top: 150px;
+    font-size: 40px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+
+}
+
+.perfil-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    object-position: center;
+    border-radius: 4px;
+}
+
+.perfil-img:hover{
+    cursor: pointer;
+}
+
+
+/*Sobre a manicure*/
+h2 {
+    font-size: 45px;
+    margin: 0px 50px;
+}
+
+.divulgacao {
+    text-align: start;
+    margin-left: 5%;
+    margin-block: 20px;
+    font-size: 50px;
+    text-decoration: underline;
+    color: #FF0099;
+}
+
+.parceria {
+    margin-left: 800px;
+}
+
+
+
+.box {
+    width: 300px;
+    height: 250px;
+    margin: 15px;
+    margin-bottom: 0px;  
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.box p {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline #fe8fd2;
+    margin-top: 5%;
+}
+
+
+.box-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 10px 30px;
+    grid-gap: 20px;
+    padding-left: 350px;
+    padding-right: 200px;
+    padding-top: 20px;
+    margin-left: 63%;
+   
+}
+
+.box-container .box img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border: 3px solid #fe8fd2;
+    box-shadow: 10px 12px 10px rgb(249, 225, 238);
+
+}
+
+.box-container .box:hover img {
+    transform: scale(1.2);
+}
+
+/*Alcance de clientes*/
+
+svg {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    margin-left: 58px;
+    
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: white;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray:440;
+    stroke-dashoffset:400;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
+    stroke: #5ddfff;
+}
+
+.container-circulo{
+    position: relative;
+    width: 900px;
+    justify-content: center;
+    border: none;
+    margin-left: -1%;
+    margin-top: -1%;
+}
+
+.container-circulo .card {
+    position: relative;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+    transition: 0.5s;
+    border: none;
+    margin-bottom: 3%;
+    
+    
+}
+
+.container-circulo .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    margin-right: 150px;
+}
+
+.percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #fbfbfb;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.percent .number h3 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+    margin-left: 130px;
+}
+
+.percent .number h3 span {
+    font-size: 25px;
+    color: black;
+    transition: 0.5s;
+}
+
+
+.card:hover .percent .number h3 {
+    color: #FF0099;
+    font-size: 60px;
+}
+
+.card:hover .percent .number h3 span {
+    color: #FF0099;
+}
+
+.text {
+    position: relative;
+    color: black;
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin-right: -20px;
+}
+
+.card:hover .text {
+    color: #FF0099;
+}
+
+/* footer */
+.footer{
+    position: relative;
+    bottom: 100px;
+    left: 500px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.footer hr {
+    position: relative;
+    right: 500px;
+    width: 2000px;
+   
+}
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #000;;
+   
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+
+.footer .links{
+ 
+
+    padding:2rem 0;
+    gap:1rem;
+}
+
+.footer .links a{
+    padding:.7rem 2rem;
+    color:#000;
+   
+    font-size: 15px;
+}
